@@ -33,7 +33,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AGa-qv-IDb">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AGa-qv-IDb">
                                             <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -53,6 +53,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="l3L-p8-guE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="d6T-TR-wqh">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="bNO-Rz-4Dj" id="jSg-6c-gCj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1M3-DT-Y72">
                             <connections>
                                 <segue destination="wBM-uI-xJm" kind="show" identifier="AddBook" id="dH7-nb-zr9"/>

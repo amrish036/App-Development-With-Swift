@@ -18,7 +18,8 @@ class BookTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      self.tableView.rowHeight = UITableViewAutomaticDimension
+      self.tableView.estimatedRowHeight = 44.0
         loadBooksFromFile()
     }
     
@@ -45,6 +46,13 @@ class BookTableViewController: UITableViewController {
         return cell
     }
 
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete{
+      books.remove(at: indexPath.row)
+      tableView.deleteRows(at: [indexPath], with: .automatic)
+    }
+  }
+  
     // MARK: - Archiving and Unarchiving
     
     func saveBooksToFile() {
@@ -82,4 +90,9 @@ class BookTableViewController: UITableViewController {
         }
     }
     
+  @IBAction func editButtonTapped(_ sender: Any) {
+    let tableViewEditingMode = tableView.isEditing
+    
+    tableView.setEditing(!tableViewEditingMode, animated: true)
+  }
 }
