@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  EmojiDictionary
+//  SystemViewControllers
 //
-//  Created by Amrish Mahesh on 16/8/18.
+//  Created by Amrish Mahesh on 8/10/18.
 //  Copyright © 2018 Amrish Mahesh. All rights reserved.
 //
 

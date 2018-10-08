@@ -85,7 +85,7 @@ class EmojiTableViewController: UITableViewController {
 //    print("\(emoji.symbol) - \(emoji.name)")
 //  }
   
-  override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+  override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
     return .delete
   }
   /*
@@ -98,7 +98,7 @@ class EmojiTableViewController: UITableViewController {
   
   
    // Override to support editing the table view.
-   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+   override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
    if editingStyle == .delete {
    // Delete the row from the data source
     emojis.remove(at: indexPath.row)
