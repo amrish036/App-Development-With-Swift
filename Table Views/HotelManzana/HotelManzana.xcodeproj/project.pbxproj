@@ -11,6 +11,7 @@
 		EE28683221749FE20054DFCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE28683021749FE20054DFCD /* Main.storyboard */; };
 		EE28683421749FE40054DFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE28683321749FE40054DFCD /* Assets.xcassets */; };
 		EE28683721749FE40054DFCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE28683521749FE40054DFCD /* LaunchScreen.storyboard */; };
+		EE28683F2174A38B0054DFCD /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28683E2174A38B0054DFCD /* AddRegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		EE28683321749FE40054DFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE28683621749FE40054DFCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE28683821749FE40054DFCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE28683E2174A38B0054DFCD /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				EE28682C21749FE20054DFCD /* AppDelegate.swift */,
 				EE28683021749FE20054DFCD /* Main.storyboard */,
+				EE28683E2174A38B0054DFCD /* AddRegistrationTableViewController.swift */,
 				EE28683321749FE40054DFCD /* Assets.xcassets */,
 				EE28683521749FE40054DFCD /* LaunchScreen.storyboard */,
 				EE28683821749FE40054DFCD /* Info.plist */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE28683F2174A38B0054DFCD /* AddRegistrationTableViewController.swift in Sources */,
 				EE28682D21749FE20054DFCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
